@@ -1,19 +1,21 @@
-<header class="bg-red-800 text-white p-4 px-12 md:flex md:items-center md:justify-between">
-    <div class="flex items-center justify-between">
-        <div class="font-bold text-xl">Renjith Thazhathethil</div>
-        <button id="menu-button" class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-    </div>
-    
-    <nav id="mobile-menu" class="hidden md:flex">
-        <ul class="flex flex-col md:flex-row md:items-center md:space-x-6">
-            <li><a href="/" class="hover:underline block p-2 md:p-0">Home</a></li>
-            <li><a href="/research/" class="hover:underline block p-2 md:p-0">Research</a></li>
-            <li><a href="/teaching/" class="hover:underline block p-2 md:p-0">Teaching</a></li>
-            <li><a href="/cv/" class="hover:underline block p-2 md:p-0">CV</a></li>
-        </ul>
-    </nav>
+<header class="bg-red-800 text-white p-4 px-12 flex items-center justify-between">
+    <div class="font-bold text-xl">Renjith Thazhathethil</div>
+
+    <button id="menu-button" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
 </header>
+
+<nav id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-red-900 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div class="p-4 flex justify-end">
+        <button id="close-button" class="text-white text-2xl">&times;</button>
+    </div>
+    <ul class="flex flex-col p-4 space-y-4">
+        <li><a href="/" class="hover:underline block p-2 text-white text-lg">Home</a></li>
+        <li><a href="/research/" class="hover:underline block p-2 text-white text-lg">Research</a></li>
+        <li><a href="/teaching/" class="hover:underline block p-2 text-white text-lg">Teaching</a></li>
+        <li><a href="/cv/" class="hover:underline block p-2 text-white text-lg">CV</a></li>
+    </ul>
+</nav>
