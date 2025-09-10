@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https:t-renjith.github.io/sitemap.xml
+Sitemap: https://t-renjith.github.io/sitemap.xml
