@@ -1,0 +1,206 @@
+\documentclass[12pt]{exam}
+\usepackage{amsmath, amssymb,amsthm}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+
+\title{First Order Partial Differential Equations\\Method of Characteristics}
+\author{Renjith Thazhathethil}
+\date{}
+
+
+\begin{document}
+    
+    \maketitle
+	\vspace{-0.5cm}
+	\hrule
+
+	\section{Linear PDEs in 2 variables}
+
+	Let $\Omega$ be an open subset of $\mathbb{R}^2$ and $\Gamma$ be a curve in $\Omega$ with parametrization of the form $\Gamma=\{(x_0(s),y_0(s));s\in I\}$ in $\Omega$, where $I$ is an open interval in $\mathbb{R}$ . 
+	
+	Consider a first order linear PDE in $\Omega$
+	\[a(x,y)u_x + b(x,y)u_y = c(x,y,u),\]
+	with initial condition
+	\[u=u_0 \text{ on } \Gamma.\]
+	where \( a, b, c \) are smooth functions in $\Omega$ (smoothness we assign later as per our requirements).
+	
+	Now if we restrict our PDE to a curve given by the following system of ODEs (called characteristic ODEs): 
+	\[\frac{dx}{dt} = a(x,y), \quad \frac{dy}{dt} = b(x,y),\]
+	with initial conditions
+	\[x(0) = x_0(s), \quad y(0) = y_0(s),\]
+	then along this curve the PDE reduces to the following ODE:
+	\[\frac{du}{dt} = c(x,y,u),\]
+	with initial condition
+	\[u(0) = u_0(s).\]
+	On solving this system of ODEs we get a solution of the PDE in implicit form
+	\[u = u(t,s), \quad x = x(t,s), \quad y = y(t,s).\]
+	To get an explicit solution of the PDE we need to invert the transformation
+	\[(t,s) \mapsto (x,y) = (x(t,s), y(t,s)).\]
+	Due to Inverse Funtion Theorem this is possible if the Jacobian of the transformation is non-zero, i.e.,
+	\[\det \left.\begin{pmatrix}
+		x_t & x_s \\
+		y_t & y_s
+		\end{pmatrix}\right|_{t=0} \neq 0.\]
+	Calculating the partial derivatives from the characteristic ODEs we have
+	\[\det \begin{pmatrix}
+		a(x_0(s),y_0(s)) & x_0'(s) \\
+		b(x_0(s),y_0(s)) & y_0'(s)
+		\end{pmatrix} \neq 0.\]
+	This condition is called the \textit{transversality condition} and geometrically it means that the initial curve $\Gamma$ is not tangent to the characteristic curves at any point. Since Inverse Function Theorem guarantees the existence of inverse transformation in a neighbourhood of the initial curve $\Gamma$, we get a local solution of the PDE in a neighbourhood of $\Gamma$.
+
+	\textbf{Note:} Even though Lipschitz continuity on $a,b,c,x_0,y_0$ and $u_0$ are enough to guarantee existence and uniqueness of the solution to the characteristic ODEs, to use inverse function theorem we need more smoothness on these functions. That is we need to ensure that the transformation 
+	\[(t,s) \mapsto (x,y) = (x(t,s), y(t,s))\]
+	is $C^1$. To guarantee this, the functions \( a, b, c ,x_0,y_0\) are are also requirred to be $C^1$ functions. Also to get the smooth solution of the PDE we need \( u_0 \) to be a smooth function.
+
+	Now we can summarize the above discussion in the following theorem.		
+
+	\begin{theorem}
+		Let $\Omega$ be an open subset of $\mathbb{R}^2$ and $\Gamma$ be a curve in $\Omega$ with parametrization of the form $\Gamma=\{(x_0(s),y_0(s));s\in I\}$ in $\Omega$, where $I$ is an open interval in $\mathbb{R}$ . Consider the first order linear PDE in $\Omega$
+		\[a(x,y)u_x + b(x,y)u_y = c(x,y,u),\]
+		with initial condition
+		\[u=u_0 \text{ on } \Gamma.\]
+		Suppose the functions \( a, b, c \) are $C^1$ functions in $\Omega$ and the functions \( x_0, y_0, u_0\) are $C^1$ functions on $I$. If the transversality condition
+		\[\det \begin{pmatrix}
+			a(x_0(s),y_0(s)) & x_0'(s) \\
+			b(x_0(s),y_0(s)) & y_0'(s)
+			\end{pmatrix} \neq 0\]
+		holds for all \( s \in I \), then there exists a unique smooth solution of the PDE in a neighbourhood of $\Gamma$.
+	\end{theorem}
+
+	\subsection{Examples}
+
+	\begin{example}
+		Consider the PDE $\ xu_x + yu_y = 2u$ on $\mathbb{R}^2$ with following initial conditions:
+		\begin{enumerate}
+			\item $u = 1 \text{ on the circle } x^2 + y^2 = 1.$
+			\item $u(x,0)=x^2.$
+			\item $u(x,1)=x^2.$ 
+		\end{enumerate}
+		
+	\end{example}
+	
+
+	\section{Quasi-Linear PDEs in 2 variables}
+
+	Given $\Omega$ and $\Gamma$ as above, consider the first order quasi-linear PDE in $\Omega$
+	\[a(x,y,u)u_x + b(x,y,u)u_y = c(x,y,u),\]
+	with initial condition
+	\[u=u_0 \text{ on } \Gamma.\]
+	
+	Here if we try to write the characteristic ODEs we get the following system of ODEs:
+	\[\frac{dx}{dt} = a(x,y,u), \quad \frac{dy}{dt} = b(x,y,u),\]
+	which is not a closed system of ODEs as \( u \) is also an unknown function. So you can't have the same approach as in the linear case. To overcome this we conside the surface defined by the solution \( z = u(x,y) \) in \( \mathbb{R}^3 \) containing the curve $\Gamma=\{(x_0(s),y_0(s),u_0(s));s\in I\}$. It is easy to see that the vector $(u_x,u_y,-1)$ will form a normal vector to this surface at any point. Now the PDE can be written as
+	\[(a(x,y,z),b(x,y,z),c(x,y,z)) \dot (u_x,u_y,-1) = 0.\]
+	This means that the vector field
+	\[(a(x,y,z),b(x,y,z),c(x,y,z))\]
+	is tangent to the surface defined by the solution \( z = u(x,y) \) at any point. Then any integral curve of this vector field passing through a point on the initial curve $\Gamma$ will lie entirely on the surface and is given by the following characteristic ODEs in \( \mathbb{R}^3 \):
+	\[\frac{dx}{dt} = a(x,y,z), \quad \frac{dy}{dt} = b(x,y,z), \quad \frac{dz}{dt} = c(x,y,z),\]
+	with initial conditions
+	\[x(0) = x_0(s), \quad y(0) = y_0(s), \quad z(0) = u_0(s).\]
+	Solving this system of ODEs we get a solution of the PDE in implicit form
+	\[u = z(t,s), \quad x = x(t,s), \quad y = y(t,s).\]
+	To get an explicit solution of the PDE we need to invert the transformation
+	\[(t,s) \mapsto (x,y) = (x(t,s), y(t,s)).\]
+	Due to Inverse Funtion Theorem this is possible if the Jacobian of the transformation is non-zero, i.e.,
+	\[\det \left.\begin{pmatrix}
+		x_t & x_s \\
+		y_t & y_s
+		\end{pmatrix}\right|_{t=0} \neq 0.\]
+	Calculating the partial derivatives from the characteristic ODEs we have
+	\[\det \begin{pmatrix}
+		a(x_0(s),y_0(s),u_0(s)) & x_0'(s) \\
+		b(x_0(s),y_0(s),u_0(s)) & y_0'(s)
+		\end{pmatrix} \neq 0.\]
+	This condition is again called the \textit{transversality condition}.
+	
+	Now we can summarize the above discussion in the following theorem.
+
+	\begin{theorem}
+		Let $\Omega$ be an open subset of $\mathbb{R}^2$ and $\Gamma$ be a curve in $\Omega$ with parametrization of the form $\Gamma=\{(x_0(s),y_0(s));s\in I\}$ in $\Omega$, where $I$ is an open interval in $\mathbb{R}$ . Consider the first order quasi-linear PDE in $\Omega$
+		\[a(x,y,u)u_x + b(x,y,u)u_y = c(x,y,u),\]
+		with initial condition
+		\[u=u_0 \text{ on } \Gamma.\]
+		Suppose the functions \( a, b, c \) are $C^1$ functions in $\Omega \times \mathbb{R}$ and the functions \( x_0, y_0, u_0\) are $C^1$ functions on $I$. If the transversality condition
+		\[\det \begin{pmatrix}
+			a(x_0(s),y_0(s),u_0(s)) & x_0'(s) \\
+			b(x_0(s),y_0(s),u_0(s)) & y_0'(s)
+			\end{pmatrix} \neq 0\]
+		holds for all \( s \in I \), then there exists a unique smooth solution of the PDE in a neighbourhood of $\Gamma$.
+	\end{theorem}
+
+	\section{General first order PDE in 2 variables}
+
+	Given $\Omega$ and $\Gamma$ as above, consider the first order non-linear PDE in $\Omega$
+	\[F(x,y,u,u_x,u_y) = 0,\]
+	with initial condition
+	\[u=u_0 \text{ on } \Gamma.\]	
+
+	Here since there is not a particular form for the PDE, we can't directly write the characteristic ODEs. After putting some effort one can see that the characteristic ODEs in this case will be given by
+	\[\frac{dx}{dt} = F_p, \quad \frac{dy}{dt} = F_q, \quad \frac{du}{dt} = pF_p + qF_q,\]
+	\[\frac{dp}{dt} = -F_x - pF_u, \quad \frac{dq}{dt} = -F_y - qF_u,\]
+	where \( p = u_x \) and \( q = u_y \), with initial conditions
+	\[x(0) = x_0(s), \quad y(0) = y_0(s), \quad u(0) = u_0(s),\]
+	\[p(0) = p_0(s), \quad q(0) = q_0(s).\]
+	Here the initial values \( p_0(s) \) and \( q_0(s) \) are to be determined from the initial condition and the PDE itself by solving the following system of equations callsed strip equations:
+	\[u_0'(s) = p_0(s)x_0'(s) + q_0(s)y_0'(s),\]
+	\[F(x_0(s),y_0(s),u_0(s),p_0(s),q_0(s)) = 0.\]
+	Solving this system of ODEs we get a solution of the PDE in implicit form
+	\[u = u(t,s), \quad x = x(t,s), \quad y = y(t,s).\]
+	To get an explicit solution of the PDE we need to invert the transformation
+	\[(t,s) \mapsto (x,y) = (x(t,s), y(t,s)).\]
+	Due to Inverse Funtion Theorem this is possible if the Jacobian of the transformation is non-zero, i.e.,
+	\[\det \left.\begin{pmatrix}
+		x_t & x_s \\
+		y_t & y_s
+		\end{pmatrix}\right|_{t=0} \neq 0.\]
+	Calculating the partial derivatives from the characteristic ODEs we have
+	\[\det \begin{pmatrix}
+		F_p(x_0(s),y_0(s),u_0(s)) & x_0'(s) \\
+		F_q(x_0(s),y_0(s),u_0(s)) & y_0'(s)
+		\end{pmatrix} \neq 0\]
+	which is called the \textit{transversality condition}.
+
+	\newpage
+	\begin{center}
+		\textbf{Exercises}
+	\end{center}
+
+	\begin{questions}
+
+		\question Find a smooth function \( a : \mathbb{R}^2 \to \mathbb{R} \) such that, for the equation of the form
+		\[a(x, y) \, u_x + u_y = 0,\]
+		there does not exist any solution in the entire \( \mathbb{R}^2 \) for any nonconstant initial value prescribed on \( \{ y = 0 \} \).
+		
+		\question Consider the PDE $xu_x+yu_y+zu_z=3u$ in $\mathbb{R}^3$.
+		\begin{parts}
+			\part Solve the PDE with initial condition $u(x,y,1)=x^2+y^2$.
+			\part Is it possible to find unique solution if the initial condition is prescribed on the surface $z=1+x^2+y^2$ ?
+		\end{parts}
+		
+		\question Consider the following IVPs:
+		\begin{choices}
+			\choice $u=u_x^2-3u_y^2,\ u(x,0)=x^2,\ x>0$.
+			\choice $u=u_xu_y,\ u(x,0)=x^2,\ x>0$.
+		\end{choices}
+		\begin{parts}
+			\part Discuss the existence and uniqueness of both IVPs.			
+			\part Solve any one the above.
+		\end{parts}
+		
+		\question Consider the PDE $xu_x+yu_y=2u$ on $\mathbb{R}^2$. Discuss the existence and uniqueness of the solution (both global and local) to the following initial conditions. If unique solution does not exist, find an alternative solution on $\mathbb{R}^2$.
+		\begin{parts}
+			\part $u=1$ on the hyperbola $xy=1, x>0$.
+			\part $u=1$ on the line $y=1$.
+			\part $u=1$ on the circle $x^2+y^2=1$.
+			\part $u(x,e^x)=xe^x$, for all $x\in \mathbb{R}$.
+		\end{parts}
+		
+	\end{questions}	
+	
+	\vfill
+	\begin{center}
+		***
+	\end{center}
+\end{document}
