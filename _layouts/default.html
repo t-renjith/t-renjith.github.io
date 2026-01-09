@@ -50,6 +50,7 @@
 
     {{ content }}
 
+    {% unless page.hide_footer %}
     <footer class="bg-red-900 text-white p-6 md:p-8 print:hidden">
         <div class="container mx-auto max-w-4xl">
 
@@ -83,6 +84,7 @@
 
         </div>
     </footer>
+    {% endunless %}
 
     <script>
         window.MathJax = {
