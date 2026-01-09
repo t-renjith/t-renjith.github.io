@@ -9,3 +9,9 @@ theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+exclude:
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - .bundle/

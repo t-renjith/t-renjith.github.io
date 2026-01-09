@@ -1,4 +1,8 @@
 *.synctex.gz
 *.DS_Store
-*.synctex.gz
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
 
