@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="liPIQd-cbtNZg0CBuWMEUCyFyiU8BpZcpZvKGLCVvhk" />
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="{{ page.body_class | default: 'bg-white text-gray-800' }} flex flex-col min-h-screen">
+
+    <header class="bg-red-800 text-white p-4 px-4 flex items-center justify-between print:hidden">
+        <button id="menu-button" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div class="font-bold text-xl">Renjith Thazhathethil</div>
+
+        <nav class="hidden md:block">
+            <ul class="flex space-x-6">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/research/" class="hover:underline">Research</a></li>
+                <li><a href="/teaching/" class="hover:underline">Teaching</a></li>
+                <li><a href="/cv/" class="hover:underline">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="mobile-menu"
+        class="fixed top-0 left-0 w-64 h-full bg-red-900 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden print:hidden">
+        <div class="p-4 flex justify-start">
+            <button id="close-button" class="text-white text-2xl">&times;</button>
+        </div>
+        <ul class="flex flex-col p-4 space-y-4">
+            <li><a href="/" class="hover:underline block p-2 text-white text-lg">Home</a></li>
+            <li><a href="/research/" class="hover:underline block p-2 text-white text-lg">Research</a></li>
+            <li><a href="/teaching/" class="hover:underline block p-2 text-white text-lg">Teaching</a></li>
+            <li><a href="/cv/" class="hover:underline block p-2 text-white text-lg">CV</a></li>
+        </ul>
+    </nav>
+
+    {{ content }}
+
+    <footer class="bg-red-900 text-white p-6 md:p-8 print:hidden">
+        <div class="container mx-auto max-w-4xl">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h2 class="font-bold text-lg mb-2">Office Address</h2>
+                    <p class="text-sm">
+                        Room No: S 24<br>
+                        Stat Math Unit<br>
+                        Indian Statistical Institute, Bangalore,<br>
+                        Karnataka-560059
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="font-bold text-lg mb-2">Contact</h2>
+                    <p class="text-sm">
+                        <a href="tel:9847963822" class="hover:underline">9847963822</a><br>
+                        <a href="mailto:renjitht_pd@isibang.ac.in"
+                            class="hover:underline">renjitht_pd@isibang.ac.in</a><br>
+                        <a href="mailto:renjith1194@gmail.com" class="hover:underline">renjith1194@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-red-700 mb-4">
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-red-100">
+                <p>&copy; 2025 Renjith Thazhathethil. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']],
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeButton = document.getElementById('close-button');
+
+            if (menuButton && mobileMenu && closeButton) {
+                // Open the menu
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('-translate-x-full');
+                    mobileMenu.classList.add('translate-x-0');
+                });
+
+                // Close the menu
+                closeButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('translate-x-0');
+                    mobileMenu.classList.add('-translate-x-full');
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
