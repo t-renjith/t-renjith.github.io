@@ -1,3 +1,13 @@
+window.MathJax = {
+    tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    },
+    svg: {
+        fontCache: 'global'
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/header.html')
         .then((response) => response.text())
