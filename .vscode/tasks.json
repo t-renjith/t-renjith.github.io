@@ -2,15 +2,15 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Serve Jekyll Site",
+      "label": "Serve 11ty Site",
       "type": "shell",
-      "command": "bundle exec jekyll serve",
+      "command": "npx @11ty/eleventy --serve",
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": [],
-      "detail": "Serves the Jekyll site locally"
+      "detail": "Serves the Eleventy site locally"
     }
   ]
 }

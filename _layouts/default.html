@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="liPIQd-cbtNZg0CBuWMEUCyFyiU8BpZcpZvKGLCVvhk" />
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{{ title | default: site.title }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script type="text/javascript" id="MathJax-script" async
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body class="{{ page.body_class | default: 'bg-white text-gray-800' }} flex flex-col min-h-screen">
+<body class="{{ body_class | default: 'bg-white text-gray-800' }} flex flex-col min-h-screen">
 
     <header class="bg-red-800 text-white p-4 px-4 flex items-center justify-between print:hidden">
         <button id="menu-button" class="md:hidden">
@@ -50,7 +50,7 @@
 
     {{ content }}
 
-    {% unless page.hide_footer %}
+    {% unless hide_footer %}
     <footer class="bg-red-900 text-white p-6 md:p-8 print:hidden">
         <div class="container mx-auto max-w-4xl">
 
