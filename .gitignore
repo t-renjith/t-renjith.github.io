@@ -17,3 +17,6 @@ _site/
 
 # Environment keys
 .env
+
+# Editor
+.vscode/

@@ -1,17 +1,17 @@
 ---
 layout: pages
-title: CV | Renjith Thazhathethil
+title: CV | {{ metadata.author.name }}
 page_title: CV
 permalink: /cv/
 ---
 
 <!-- Header Section -->
 <div class="text-left mb-6">
-    <h1 class="text-2xl font-bold uppercase mb-2">RENJITH THAZHATHETHIL</h1>
+    <h1 class="text-2xl font-bold uppercase mb-2">{{ metadata.author.name | upcase }}</h1>
     <p class="mb-4">
         NBHM Post Doctoral fellow,<br>
-        Statistical and Mathematical Unit,<br>
-        Indian Statistical Institute, Bangalore - 560096.
+        {{ metadata.author.department }},<br>
+        {{ metadata.addresses.office.institution }} - 560096.
     </p>
 
     <div class="flex justify-left">
@@ -19,11 +19,11 @@ permalink: /cv/
             <tbody>
                 <tr>
                     <td class="pr-2 font-bold">Email:</td>
-                    <td>renjitht_pd@isibng.ac.in, renjith1194@gmail.com</td>
+                    <td>{{ metadata.author.email }}, {{ metadata.author.secondary_email }}</td>
                 </tr>
                 <tr>
                     <td class="pr-2 font-bold">Mobile:</td>
-                    <td>+91 98470 63822, +91 82810 33822</td>
+                    <td>{{ metadata.author.phone }}</td>
                 </tr>
             </tbody>
         </table>
