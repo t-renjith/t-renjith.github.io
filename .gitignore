@@ -1,8 +1,19 @@
-*.synctex.gz
-*.DS_Store
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
+# Systems
+.DS_Store
+Thumbs.db
 
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 11ty
+_site/
+
+# Emacs/Vim
+*~
+\#*\#
+.#*
+
+# Environment keys
+.env
