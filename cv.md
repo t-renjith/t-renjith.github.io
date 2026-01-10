@@ -6,19 +6,6 @@ page_title: CV
 permalink: /cv/
 ---
 
-<style>
-  .markdown-content h1 { font-size: 2.25rem; font-weight: 700; color: #991b1b; margin-bottom: 1rem; }
-  .markdown-content h2 { font-size: 1.5rem; font-weight: 600; color: #4b5563; border-bottom: 1px solid #d1d5db; padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; }
-  .markdown-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
-  .markdown-content li { margin-bottom: 0.25rem; }
-  .markdown-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-  .markdown-content td, .markdown-content th { padding: 0.5rem; vertical-align: top; text-align: left; }
-  .markdown-content p { margin-bottom: 1rem; }
-  .markdown-content strong { font-weight: 700; }
-</style>
-
-<div class="markdown-content">
-
 ## RENJITH THAZHATHETHIL
 
 NBHM Post Doctoral fellow,  
@@ -90,5 +77,3 @@ Indian Statistical Institute, Bangalore - 560096.
 *   International Conference on Industrial and Applied Mathematics (ICIAM) - 2023, Waseda University, Tokyo, 20-08-2023 to 25-08-2023.
 *   Workshop on Multiscale Analysis cum Conference on Differential Equations,IIT Ropar, 26-02-2024 to 02-02-2024.
 *   Discussion meeting on quatitative theory on homogenization, IIT Bombay, 17-02-2025 to 22-05-2025
-
-</div>

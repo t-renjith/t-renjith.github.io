@@ -6,20 +6,6 @@ page_title: Teaching
 permalink: /teaching/
 ---
 
-<style>
-  .markdown-content h1 { font-size: 2.25rem; font-weight: 700; color: #991b1b; margin-bottom: 1rem; }
-  .markdown-content h2 { font-size: 1.5rem; font-weight: 600; color: #4b5563; border-bottom: 1px solid #d1d5db; padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; }
-  .markdown-content h3 { font-size: 1.25rem; font-weight: 700; color: #991b1b;}
-  .markdown-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
-  .markdown-content li { margin-bottom: 0.25rem; }
-  .markdown-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-  .markdown-content td, .markdown-content th { padding: 0.5rem; vertical-align: top; text-align: left; }
-  .markdown-content p { margin-bottom: 1rem; }
-  .markdown-content strong { font-weight: 700; }
-</style>
-
-<div class="markdown-content">
-
 ## As Instructor
 
 ### [Partial Differential Equations](https://www.isibang.ac.in/~adean/infsys/database/MMath/C13PDE.html)
@@ -60,5 +46,3 @@ G.B Folland: Introduction to Partial Differential Equations
 *   [NCM AIS on Analysis and PDE (IIT Ropar)](https://www.atmschools.org/school/2025/AIS/apde)
 *   [NCM Workshop on Analysis of Dynamical Systems and Applications to Control Systems (JUIT)](https://www.atmschools.org/school/2025/NCMW/adsacs)
 *   [Summer Workshop in Mathematics (Kannur University)](https://swim-ksom.github.io/2025/)
-
-</div>

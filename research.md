@@ -6,19 +6,6 @@ page_title: Research
 permalink: /research/
 ---
 
-<style>
-  .markdown-content h1 { font-size: 2.25rem; font-weight: 700; color: #991b1b; margin-bottom: 1rem; }
-  .markdown-content h2 { font-size: 1.5rem; font-weight: 600; color: #4b5563; border-bottom: 1px solid #d1d5db; padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; }
-  .markdown-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
-  .markdown-content li { margin-bottom: 0.25rem; }
-  .markdown-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-  .markdown-content td, .markdown-content th { padding: 0.5rem; vertical-align: top; text-align: left; }
-  .markdown-content p { margin-bottom: 1rem; }
-  .markdown-content strong { font-weight: 700; }
-</style>
-
-<div class="markdown-content">
-
 ## Research Interests
 
 My broad area of research is Partial Differential Equations. Specifically, I focus on the mathematical fields of homogenization and optimal control problems.
@@ -40,5 +27,3 @@ My broad area of research is Partial Differential Equations. Specifically, I foc
 *   A K Nandakumaran, Abu Sufian, Renjith T, **Homogenization with strong contrasting diffusivity in a circular oscillating domain with $L^1$ source term,** *Ann. Mat. Pura Appl.* (2022). [Link](https://link.springer.com/article/10.1007/s10231-022-01259-x)
 *   A K Nandakumaran, Abu Sufian, Renjith T, **Homogenization of semi-linear optimal control problems on oscillating domains with matrix coefficients,** *Applied Mathematics and Optimization* (2024). [Link](https://link.springer.com/article/10.1007/s00245-024-10113-w)
 *   A K Nandakumaran, Abu Sufian, Renjith T, **Semi-linear optimal control problems with strong contrasting diffusivity in rough domains,** *Ann. Mat. Pura Appl.* (2025). [Link](https://link.springer.com/article/10.1007/s10231-025-01594-9)
-
-</div>
