@@ -13,6 +13,119 @@
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+
+    <style>
+        .reveal .slides {
+            text-align: left;
+            font-size: 28px;
+        }
+
+        .reveal .slides section>* {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Typography */
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .reveal h1 {
+            font-size: 2.2em;
+        }
+
+        .reveal h2 {
+            font-size: 1.8em;
+        }
+
+        .reveal h3 {
+            font-size: 1.4em;
+        }
+
+        .reveal p {
+            margin-bottom: 1em;
+        }
+
+        .reveal ul,
+        .reveal ol {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        .reveal li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Blockquotes as Boxes */
+        .reveal blockquote {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #333;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin: 1.5rem auto;
+            font-style: normal;
+        }
+
+        /* Style the first bold element in a blockquote as a title */
+        .reveal blockquote p:first-child strong:first-child {
+            display: block;
+            font-size: 1.2em;
+            text-decoration: underline;
+            margin-bottom: 0.5rem;
+            color: #ef4444;
+            /* Default red for box titles */
+        }
+
+        /* Tables for Columns */
+        .reveal table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 2rem 0;
+            margin: 2rem 0;
+        }
+
+        .reveal table th,
+        .reveal table td {
+            border: none;
+            vertical-align: top;
+            text-align: left;
+            padding: 0;
+        }
+
+        /* Title Slide Special Styling */
+        .reveal section.title-slide {
+            text-align: center;
+        }
+
+        .reveal section.title-slide h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .reveal section.title-slide h3 {
+            color: #555;
+        }
+
+        .reveal section.title-slide p {
+            margin: 0;
+        }
+
+        .reveal section.title-slide .author {
+            color: #3b82f6;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+
+        .reveal section.title-slide .date {
+            font-size: 0.7em;
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,11 +140,13 @@
         {{ content }}
     </div>
 
+    <!-- Reveal.js & Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+
     <script>
         // Process the content to create slides
         const originalContent = document.getElementById('original-content');
@@ -39,27 +154,44 @@
 
         let currentSection = document.createElement('section');
         let hasContent = false;
+        let isFragment = false;
 
         // Iterate over top-level nodes
         Array.from(originalContent.children).forEach(node => {
+            // Check for Slide Delimiter (HR)
             if (node.tagName === 'HR') {
-                // HR indicates a new slide
                 if (hasContent) {
                     slidesContainer.appendChild(currentSection);
                     currentSection = document.createElement('section');
                     hasContent = false;
+                    isFragment = false;
                 }
-            } else {
-                // Append node to current slide
-                // Use cloneNode or appendChild (appendChild moves it)
-                currentSection.appendChild(node.cloneNode(true));
+            }
+            // Check for Pause Marker (-- in P tag)
+            else if (node.tagName === 'P' && (node.innerText.trim() === '--' || node.innerText.trim() === '–')) {
+                isFragment = true;
+            }
+            // Regular Content
+            else {
+                let clone = node.cloneNode(true);
+                if (isFragment) {
+                    clone.classList.add('fragment');
+                }
+                currentSection.appendChild(clone);
                 hasContent = true;
             }
         });
 
-        // Append the last slide if it has content
         if (hasContent) {
             slidesContainer.appendChild(currentSection);
+        }
+
+        // Feature: Auto-detect Title Slide (First Slide)
+        if (slidesContainer.firstElementChild) {
+            slidesContainer.firstElementChild.classList.add('title-slide');
+
+            // Optional: Wrap author/date in spans if they are just paragraphs for better styling?
+            // For now, rely on standard Markdown structure.
         }
 
         // Initialize Reveal
