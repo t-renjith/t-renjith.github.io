@@ -16,10 +16,10 @@ Offered: Jan-April 2025
 First order PDE (Method of Characteristics), Classification of Second order PDE, Laplace Equation, Heat Equation, Wave equation and some introduction to Sobolev spaces and weak solutions.
 
 **Reference Books:**
-L C Evans: Partial Differential Equations
-A K Nandakumaran and P S Datti: Partial Differential Equations - Classical Theory with a Modern Touch
-Fritz John: Partial Differential Equations
-G.B Folland: Introduction to Partial Differential Equations
+- L C Evans: Partial Differential Equations
+- A K Nandakumaran and P S Datti: Partial Differential Equations - Classical Theory with a Modern Touch
+- Fritz John: Partial Differential Equations
+- G.B Folland: Introduction to Partial Differential Equations
 
 **Materials:**
 [Assignment 1](PDE/assignment-1/), [Assignment 2](PDE/assignment-2/), [Assignment 3](PDE/assignment-3/), [Assignment 4](PDE/assignment-4/),
