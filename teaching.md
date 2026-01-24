@@ -13,7 +13,10 @@ M-Math Course, ISI Bangalore
 Offered: Jan-April 2025
 
 **Topics Covered:**
-First order PDE (Method of Characteristics), Classification of Second order PDE, Laplace Equation, Heat Equation, Wave equation and some introduction to Sobolev spaces and weak solutions.
+- First order PDE (Method of Characteristics)
+- Classification of Second order PDE
+- Laplace, Heat and Wave Equation
+- Introduction to Sobolev spaces and weak solutions.
 
 **Reference Books:**
 - L C Evans :- Partial Differential Equations
