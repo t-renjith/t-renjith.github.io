@@ -30,6 +30,12 @@ Offered: Jan-April 2025
 [Midterm Exam](PDE/midterm/), [Final Exam](PDE/final-exam/), [Supplementary Exam](PDE/supplementary/),
 [Test Presentation](PDE/test-presentation/)
 
+## Lecture Notes
+
+Here I am providing the lecture notes for some of the random lectures I have given.
+
+### [Determinant](Notes/determinant/)
+
 ## As Teaching Assistant
 
 ### [IISc Courses](https://math.iisc.ac.in/course-list.html)
