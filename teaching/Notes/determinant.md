@@ -24,7 +24,7 @@ $$
 To solve for $x$, we can eliminate $y$ by multiplying the first equation by $d$ and the second by $b$:
 $$
 \begin{aligned}
-adx + bdy &= dp \\
+adx + bdy &= dp \\\\
 bcx + bdy &= bq
 \end{aligned}
 $$
@@ -38,8 +38,8 @@ It is clear that we can solve for $x$ provided that $ad - bc \neq 0$. If $ad - b
 Now, consider a system of three linear equations with three unknowns:
 $$
 \begin{align}
-a_{11}x_1 + a_{12}x_2 + a_{13}x_3 &= b_1 \\
-a_{21}x_1 + a_{22}x_2 + a_{23}x_3 &= b_2 \\
+a_{11}x_1 + a_{12}x_2 + a_{13}x_3 &= b_1 \\\\
+a_{21}x_1 + a_{22}x_2 + a_{23}x_3 &= b_2 \\\\
 a_{31}x_1 + a_{32}x_2 + a_{33}x_3 &= b_3
 \end{align}
 $$
@@ -47,7 +47,7 @@ $$
 Suppose $a_{33} \neq 0$. We can eliminate $x_3$ from Equations (1) and (2) by performing the operations $a_{33} \times (1) - a_{13} \times (3)$ and $a_{33} \times (2) - a_{23} \times (3)$. This results in a system of two equations in two unknowns:
 $$
 \begin{align*}
-(a_{11}a_{33} - a_{31}a_{13})x_1 + (a_{12}a_{33} - a_{32}a_{13})x_2 &= b_1a_{33} - b_3a_{13} \\
+(a_{11}a_{33} - a_{31}a_{13})x_1 + (a_{12}a_{33} - a_{32}a_{13})x_2 &= b_1a_{33} - b_3a_{13} \\\\
 (a_{21}a_{33} - a_{31}a_{23})x_1 + (a_{22}a_{33} - a_{32}a_{23})x_2 &= b_2a_{33} - b_3a_{23}
 \end{align*}
 $$
@@ -55,7 +55,7 @@ $$
 Following the same logic as the $2 \times 2$ case, we eliminate $x_2$ to isolate $x_1$. The resulting coefficient of $x_1$ is:
 $$
 \begin{aligned}
-&(a_{11}a_{33} - a_{31}a_{13})(a_{22}a_{33} - a_{32}a_{23}) - (a_{12}a_{33} - a_{32}a_{13})(a_{21}a_{33} - a_{31}a_{23}) \\
+&(a_{11}a_{33} - a_{31}a_{13})(a_{22}a_{33} - a_{32}a_{23}) - (a_{12}a_{33} - a_{32}a_{13})(a_{21}a_{33} - a_{31}a_{23}) \\\\
 &= a_{33}(a_{11}a_{22}a_{33} - a_{11}a_{32}a_{23} - a_{12}a_{21}a_{33} + a_{12}a_{31}a_{23} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31})
 \end{aligned}
 $$
@@ -66,8 +66,8 @@ $$ a_{11}a_{22}a_{33} - a_{11}a_{32}a_{23} - a_{12}a_{21}a_{33} + a_{12}a_{31}a_
 This quantity is defined as the **determinant** of the $3 \times 3$ matrix:
 $$ 
 \begin{pmatrix} 
-a_{11} & a_{12} & a_{13} \\
-a_{21} & a_{22} & a_{23} \\
+a_{11} & a_{12} & a_{13} \\\\
+a_{21} & a_{22} & a_{23} \\\\
 a_{31} & a_{32} & a_{33} 
 \end{pmatrix} 
 $$
