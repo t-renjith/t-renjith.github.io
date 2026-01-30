@@ -3,8 +3,7 @@ layout: notes
 eleventyComputed:
   title: "Teaching | {{ metadata.author.name }}"
 page_title: Teaching
-course: "Linear Algebra"
-topic: "Determinants"
+course: "Determinants"
 permalink: /teaching/Notes/determinant/
 ---
 
@@ -16,7 +15,7 @@ The concept of the determinant arises naturally when we attempt to solve systems
 Consider a system of two linear equations with two unknowns:
 $$
 \begin{align*}
-ax + by &= p \\
+ax + by &= p \\\\
 cx + dy &= q
 \end{align*}
 $$
