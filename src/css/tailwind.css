@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enable horizontal scroll for display math equations */
+.katex-display {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 0.5em 0;
+}
+
+/* Add spacing around inline math */
+eq {
+  margin: 0 0.2em;
+}
