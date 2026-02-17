@@ -90,7 +90,7 @@ The determinant possesses several key properties that facilitate both its calcul
 3.  **Scalar Multiplication**: Multiplying a single row or column by a scalar $c$ scales the entire determinant by $c$.
 4.  **Row/Column Addition**: Adding a multiple of one row (or column) to another row (or column) leaves the determinant unchanged.
 
-### General Form: The Leibniz Formula
+## General Form: The Leibniz Formula
 
 If we examine the $3 \times 3$ expansion in Equation (4), a clear structural pattern emerges:
 1.  Each term is a product of exactly one element from each row and each column.

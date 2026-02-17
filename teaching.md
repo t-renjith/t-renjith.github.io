@@ -8,27 +8,26 @@ permalink: /teaching/
 
 ## As Instructor
 
-### [Partial Differential Equations](PDE/)
+ - [Partial Differential Equations](PDE/)
 
 ## Notes
 
 Here are lecture notes for some of the topics I have covered in various lectures.
 
-### [Determinant](Notes/determinant/)
-
-### [Matrix Groups](Notes/matrixgroups/)
+- [Determinant](Notes/determinant/)
+- [Matrix Groups](Notes/matrixgroups/)
 
 ## As Teaching Assistant
 
-### [IISc Courses](https://math.iisc.ac.in/course-list.html)
+### IISc Courses
 *   [Analysis and Linear Algebra (UG Course)](https://math.iisc.ac.in/all-courses/um101.html)
 *   [Ordinary Differential Equations (Int-PhD Course)](https://math.iisc.ac.in/all-courses/ma241.html)
 *   [Partial Differential Equations (Int-PhD Course)](https://math.iisc.ac.in/all-courses/ma242.html)
 
-### [ISI Courses](https://www.isibang.ac.in/~adean/infsys/course-list.html)
+### ISI Courses
 *   [Linear Algebra II (B Math Course)](https://www.isibang.ac.in/~adean/infsys/database/Bmath/LAlg2.html)
 
-### [NPTEL Courses](https://nptel.ac.in/)
+### NPTEL Courses
 *   [Measure and Integration](https://nptel.ac.in/courses/111108135)
 *   [First Course on Partial Differential Equations - I](https://nptel.ac.in/courses/111108144)
 *   [First Course on Partial Differential Equations - II](https://nptel.ac.in/courses/111108152)

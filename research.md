@@ -24,7 +24,7 @@ My broad area of research is Partial Differential Equations. Specifically, I foc
 
 ## Publications
 
-*   [A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization of elliptic PDE with $L^1$ source term in domains with boundary having very general oscillations,* **Asymptotic Analysis**. (2022).](https://journals.sagepub.com/doi/abs/10.3233/ASY-221808)
-*   [A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization with strong contrasting diffusivity in a circular oscillating domain with $L^1$ source term,* **Ann. Mat. Pura Appl.** (2022).](https://link.springer.com/article/10.1007/s10231-022-01259-x)
-*   [A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization of semi-linear optimal control problems on oscillating domains with matrix coefficients,* **Applied Mathematics and Optimization** (2024).](https://link.springer.com/article/10.1007/s00245-024-10113-w)
-*   [A K Nandakumaran, Abu Sufian, Renjith T, *Semi-linear optimal control problems with strong contrasting diffusivity in rough domains,* **Ann. Mat. Pura Appl.** (2025).](https://link.springer.com/article/10.1007/s10231-025-01594-9)
+*   A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization of elliptic PDE with $L^1$ source term in domains with boundary having very general oscillations,* **Asymptotic Analysis**. (2022). [[Link](https://journals.sagepub.com/doi/abs/10.3233/ASY-221808)]
+*   A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization with strong contrasting diffusivity in a circular oscillating domain with $L^1$ source term,* **Ann. Mat. Pura Appl.** (2022). [[Link](https://link.springer.com/article/10.1007/s10231-022-01259-x)]
+*   A K Nandakumaran, Abu Sufian, Renjith T, *Homogenization of semi-linear optimal control problems on oscillating domains with matrix coefficients,* **Applied Mathematics and Optimization** (2024). [[Link](https://link.springer.com/article/10.1007/s00245-024-10113-w)]
+*   A K Nandakumaran, Abu Sufian, Renjith T, *Semi-linear optimal control problems with strong contrasting diffusivity in rough domains,* **Ann. Mat. Pura Appl.** (2025). [[Link](https://link.springer.com/article/10.1007/s10231-025-01594-9)]
