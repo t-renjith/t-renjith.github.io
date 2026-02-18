@@ -1,50 +1,50 @@
 {
-    "title": "Renjith Thazhathethil",
-    "url": "https://t-renjith.github.io",
-    "language": "en",
-    "description": "Personal website of Renjith Thazhathethil, Post Doctoral Researcher.",
-    "author": {
-        "name": "Renjith Thazhathethil",
-        "email": "renjitht_pd@isibang.ac.in",
-        "secondary_email": "renjith1194@gmail.com",
-        "phone": "+91 9847963822",
-        "job_title": "Post Doctoral Researcher",
-        "department": "Theoretical Statistics and Mathematical Unit",
-        "institution": "Indian Statistical Institute, Bangalore",
-        "institution_url": "https://www.isibang.ac.in",
-        "department_url": "https://www.isibang.ac.in/~statmath/",
-        "google_scholar": "https://scholar.google.com/citations?user=nWM1dpIAAAAJ&hl=en"
+  "title": "Renjith Thazhathethil",
+  "url": "https://t-renjith.github.io",
+  "language": "en",
+  "description": "Personal website of Renjith Thazhathethil, Post Doctoral Researcher.",
+  "author": {
+    "name": "Renjith Thazhathethil",
+    "email": "renjitht_pd@isibang.ac.in",
+    "secondary_email": "renjith1194@gmail.com",
+    "phone": "+91 9847963822",
+    "job_title": "Post Doctoral Researcher",
+    "department": "Theoretical Statistics and Mathematical Unit",
+    "institution": "Indian Statistical Institute, Bangalore",
+    "institution_url": "https://www.isibang.ac.in",
+    "department_url": "https://www.isibang.ac.in/~statmath/",
+    "google_scholar": "https://scholar.google.com/citations?user=nWM1dpIAAAAJ&hl=en"
+  },
+  "addresses": {
+    "office": {
+      "room": "Room No: S 13",
+      "unit": "Stat Math Unit",
+      "institution": "Indian Statistical Institute, Bangalore",
+      "location": "Karnataka-560059"
     },
-    "addresses": {
-        "office": {
-            "room": "Room No: S 13",
-            "unit": "Stat Math Unit",
-            "institution": "Indian Statistical Institute, Bangalore",
-            "location": "Karnataka-560059"
-        },
-        "residential": {
-            "line1": "159, 3rd Cross",
-            "line2": "Saptagiri Residency, Muthurayanagar",
-            "line3": "Mysore Road, Bangalore",
-            "location": "Karnataka-560059"
-        }
+    "residential": {
+      "line1": "159, 3rd Cross",
+      "line2": "Saptagiri Residency, Muthurayanagar",
+      "line3": "Mysore Road, Bangalore",
+      "location": "Karnataka-560059"
+    }
+  },
+  "navigation": [
+    {
+      "text": "Home",
+      "url": "/"
     },
-    "navigation": [
-        {
-            "text": "Home",
-            "url": "/"
-        },
-        {
-            "text": "Research",
-            "url": "/research/"
-        },
-        {
-            "text": "Teaching",
-            "url": "/teaching/"
-        },
-        {
-            "text": "CV",
-            "url": "/cv/"
-        }
-    ]
+    {
+      "text": "Research",
+      "url": "/research/"
+    },
+    {
+      "text": "Teaching",
+      "url": "/teaching/"
+    },
+    {
+      "text": "CV",
+      "url": "/cv/"
+    }
+  ]
 }

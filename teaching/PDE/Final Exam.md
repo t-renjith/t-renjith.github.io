@@ -1,7 +1,7 @@
 ---
 layout: pages
 eleventyComputed:
-  title: "Teaching | {{ metadata.author.name }}"
+  title: 'Teaching | {{ metadata.author.name }}'
 page_title: Partial Differential Equations
 math: true
 permalink: /teaching/PDE/final-exam/
@@ -10,7 +10,6 @@ permalink: /teaching/PDE/final-exam/
 ## Final Exam
 
 1.  Consider the IVP $u_x^2+u_y^2=1$, $u(x,y)=0$ on the line $x+y=1$.
-
     1.  **[5 points]** Discuss the existence and uniqueness of the IVP.
 
     2.  **[5 points]** Solve the IVP
@@ -18,6 +17,7 @@ permalink: /teaching/PDE/final-exam/
 2.  **[5 points]** Consider the PDE $-\Delta u = \lambda u$ in $\Omega$, $u = 0$ on $\partial\Omega$ where $\lambda$ is a scalar and $\Omega$ is a bounded open set. If $\lambda \leq 0$, prove that $u \equiv 0$.
 
 3.  **[5 points]** Suppose $u$ solves:
+
     $$
     \begin{align*}
         u_t - \Delta u & = u\text{ in } \Omega \times (0,T),      \\
@@ -25,9 +25,11 @@ permalink: /teaching/PDE/final-exam/
         u(x,t)         & =0\text{ on }\partial\Omega\times[0,T].
     \end{align*}
     $$
+
     Then show that $u(x,t) = 0$ in $\Omega \times (0,T)$.
 
 4.  **[5 points]** Show that if $u$ satisfies the heat equation $u_t - \Delta u = 0$ in $\Omega \times (0,T)$, then the following maximum principle holds:
+
     $$
     \begin{equation*}
                   \sup\limits_{\Omega \times (0,T)} u(x,t) = \sup\limits_{\Gamma_T} u(x,t).

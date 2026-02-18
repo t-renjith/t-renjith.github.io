@@ -1,7 +1,7 @@
 ---
 layout: pages
 eleventyComputed:
-  title: "Teaching | {{ metadata.author.name }}"
+  title: 'Teaching | {{ metadata.author.name }}'
 page_title: Partial Differential Equations
 math: true
 permalink: /teaching/PDE/midterm/
@@ -13,7 +13,6 @@ permalink: /teaching/PDE/midterm/
     $u_{xx}-2u_{xy}-3u_{yy}+u_y=0$.
 
 2.  Evaluate the integrals:
-
     1.  **[1 point]**
         $\displaystyle \int_\Omega\frac{2x_1}{1+|x|^2}~dx$, where
         $\Omega=\{x\in \mathbb{R}^3:|x_1|+|x_2|+|x_3|\leq 1\}$
@@ -23,7 +22,6 @@ permalink: /teaching/PDE/midterm/
         where $u=|x|^{-1}$ in $\mathbb{R}^3$ and $\alpha=(2,0,0)$.
 
 3.  Consider the PDE $xu_x+yu_y+zu_z=3u$ in $\mathbb{R}^3$.
-
     1.  **[3 points]** Solve the PDE with initial condition
         $u(x,y,1)=x^2+y^2$.
 
@@ -31,11 +29,9 @@ permalink: /teaching/PDE/midterm/
         initial condition is prescribed on the surface $z=1+x^2+y^2$ ?
 
 4.  Consider the following IVPs:
-
     - **A:** $u=u_x^2-3u_y^2,\ u(x,0)=x^2,\ x>0$.
 
     - **B:** $u=u_xu_y,\ u(x,0)=x^2,\ x>0$.
-
     1.  **[4 points]** Discuss the existence and uniqueness of both
         IVPs.
 
@@ -62,7 +58,6 @@ permalink: /teaching/PDE/midterm/
     $\Omega$.
 
 8.  Consider the PDE $xu_x+yu_y=2u$ on $\mathbb{R}^2$.
-
     1.  **[3 points]** Solve the PDE with the initial condition
         $u(x,1)=x$. Determine whether the solution is globally unique?
         If it is not, find ans alternative solution on $\mathbb{R}^2$.

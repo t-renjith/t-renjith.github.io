@@ -1,7 +1,7 @@
 ---
 layout: pages
 eleventyComputed:
-  title: "Teaching | {{ metadata.author.name }}"
+  title: 'Teaching | {{ metadata.author.name }}'
 page_title: Partial Differential Equations
 math: true
 permalink: /teaching/PDE/assignment-7/
@@ -12,7 +12,6 @@ permalink: /teaching/PDE/assignment-7/
 1.  **[5 points]** Is there an $f$ in $L^1(\mathbb{R})$ such that $f * f = f$? What about $L^2(\mathbb{R})$
 
 2.  **[5 points]** For $\delta > 0$, let $f_\delta(x) = f(\delta x)$. Compute the Fourier transform of $f$. Hence or otherwise show the following:
-
     - If $\|\hat{f}\|_q \leq \|f\|_p$ for all $f \in L^p$, then $\frac{1}{p} + \frac{1}{q} = 1$.
 
     - If $\|\hat{f}\|_p \leq \|f\|_p$ for all $f \in L^p$, then $p = 2$.
