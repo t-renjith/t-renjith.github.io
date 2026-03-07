@@ -9,11 +9,11 @@ permalink: /cv/
 
 ## RENJITH THAZHATHETHIL
 
-NBHM Post Doctoral fellow,  
-Statistical and Mathematical Unit,  
-Indian Statistical Institute, Bangalore - 560096.
+Assistant Professor,  
+Department of Mathematics,  
+Government College, Kasaragod.
 
-Email : renjitht_pd@isibng.ac.in, renjith1194@gmail.com
+Email : renjith1194@gmail.com
 
 Mobile : +91 98470 63822, +91 82810 33822
 
@@ -37,7 +37,7 @@ Mobile : +91 98470 63822, +91 82810 33822
 ## Research Experiences
 
 - Worked as a research associate in the Department of Mathematics, IISc Bangalore from 01.02.2023 to 06.12.2023.
-- Working as NBHM Post Doctorate in the Statistical and Mathematics Unit, ISI Bangalore from 12.12.2023.
+- Working as NBHM Post Doctorate in the Statistical and Mathematics Unit, ISI Bangalore from 12.12.2023 to 02.03.2026
 
 ## Teaching Experiences
 
