@@ -20,7 +20,7 @@ My broad area of research is Partial Differential Equations. Specifically, I foc
 ## Research Positions
 
 - Feb 2023 - Nov 2023: Research Associate, Dept. of Mathematics, IISc Bangalore.
-- Dec 2023 - Till Date: Post Doctoral Research Fellow, Stat Math Unit, ISI Bangalore.
+- Dec 2023 - February 2026: Post Doctoral Research Fellow, Stat Math Unit, ISI Bangalore.
 
 ## Publications
 
