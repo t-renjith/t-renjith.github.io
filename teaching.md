@@ -8,6 +8,7 @@ permalink: /teaching/
 
 ## As Instructor
 
+- [Functional Analysis](functional-analysis/)
 - [Partial Differential Equations](PDE/)
 
 ## Notes
@@ -15,7 +16,9 @@ permalink: /teaching/
 Here are lecture notes for some of the topics I have covered in various lectures.
 
 - [Determinant](Notes/determinant/)
+- [Finite-Dimensional Normed Spaces](functional-analysis/finite-dimensional-spaces/)
 - [Matrix Groups](Notes/matrixgroups/)
+
 
 ## As Teaching Assistant
 
