@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('*.png');
   eleventyConfig.addPassthroughCopy('*.ico');
   eleventyConfig.addPassthroughCopy('*.webp');
+  eleventyConfig.addPassthroughCopy('cv.pdf');
 
   // HTML Minification
   const htmlmin = require('html-minifier');

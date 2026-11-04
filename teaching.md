@@ -16,9 +16,9 @@ permalink: /teaching/
 Here are lecture notes for some of the topics I have covered in various lectures.
 
 - [Determinant](Notes/determinant/)
-- [Finite-Dimensional Normed Spaces](functional-analysis/finite-dimensional-spaces/)
+- [Introduction to Linear Algebra](Notes/introduction-linear-algebra/)
 - [Matrix Groups](Notes/matrixgroups/)
-
+- [The Weierstrass Counterexample to Dirichlet's Principle](Notes/weierstrass-counterexample/)
 
 ## As Teaching Assistant
 
